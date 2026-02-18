@@ -22,7 +22,7 @@ const ContactCTA = () => {
 
         // 1. Envío al correo electrónico usando FormSubmit
         try {
-            const response = await fetch("https://formsubmit.co/ajax/lenermatos128@gmail.com", {
+            const response = await fetch("https://formsubmit.co/ajax/ventas@dylinversiones.com", {
                 method: "POST",
                 headers: {
                     'Content-Type': 'application/json',
@@ -63,7 +63,7 @@ const ContactCTA = () => {
             `Quedo atento a su pronta respuesta. ¡Gracias!`
         );
 
-        const phoneNumber = "34624432245"; // Número actualizado según UI
+        const phoneNumber = "51947438109"; // Número actualizado según UI
         window.open(`https://wa.me/${phoneNumber}?text=${message}`, '_blank');
     };
 
