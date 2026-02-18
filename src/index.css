@@ -1,0 +1,62 @@
+@import "tailwindcss";
+
+@theme {
+    --color-brand-primary: #23458C;
+    --color-brand-secondary: #E5962F;
+    --color-brand-accent: #E96A19;
+    --color-brand-dark: #1F2937;
+    --color-brand-light: #F3F4F6;
+    --color-brand-gray: #808080;
+
+    --font-sans: 'Inter', system-ui, sans-serif;
+
+    --animate-subtle-zoom: subtle-zoom 20s infinite alternate;
+}
+
+@keyframes subtle-zoom {
+    0% {
+        transform: scale(1);
+    }
+
+    100% {
+        transform: scale(1.1);
+    }
+}
+
+@keyframes fade-in-up {
+    0% {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+
+    100% {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+.animate-fade-in-up {
+    animation: fade-in-up 0.8s ease-out forwards;
+}
+
+body {
+    @apply bg-brand-light text-brand-dark antialiased;
+}
+
+@keyframes marquee {
+    0% {
+        transform: translateX(0);
+    }
+
+    100% {
+        transform: translateX(-50%);
+    }
+}
+
+.animate-marquee {
+    animation: marquee 40s linear infinite;
+}
+
+.pause-on-hover:hover {
+    animation-play-state: paused;
+}
