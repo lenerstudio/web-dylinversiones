@@ -1,4 +1,4 @@
-import React from 'react';
+
 import { ShieldCheck, CheckCircle } from 'lucide-react';
 
 const Guarantee = () => {

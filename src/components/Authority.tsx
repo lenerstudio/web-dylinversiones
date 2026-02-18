@@ -1,5 +1,4 @@
-import React from 'react';
-import { Award, Briefcase, ThumbsUp } from 'lucide-react';
+import { Award, ThumbsUp } from 'lucide-react';
 
 const Authority = () => {
     return (
